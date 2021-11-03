@@ -1,3 +1,5 @@
+const main_base_URL =  'https://nuxt-test-project-beige.vercel.app';
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -38,7 +40,9 @@ export default {
     '@nuxtjs/composition-api/module',
     '@nuxtjs/sitemap',
   ],
-
+  sitemap: {
+    hostname: main_base_URL
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     loaders: {
